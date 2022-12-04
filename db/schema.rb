@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_04_212842) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_04_222829) do
   create_table "accounts", force: :cascade do |t|
     t.integer "account_number"
     t.integer "password"
@@ -26,7 +26,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_04_212842) do
     t.integer "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "account_id", null: false
+    t.integer "account_id"
+    t.integer "password", null: false
     t.index ["account_id"], name: "index_users_on_account_id"
   end
 
