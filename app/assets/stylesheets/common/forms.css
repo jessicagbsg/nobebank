@@ -6,7 +6,6 @@
   color: var(--third-color);
   font-family: "Roboto";
   font-size: 1rem;
-  
 }
 
 .form-input{
@@ -35,6 +34,7 @@
   font-family: "Roboto";
   font-size: 1rem;
   text-transform: uppercase;
+  
 }
 
 div.actions{
