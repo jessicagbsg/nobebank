@@ -1,0 +1,47 @@
+.header{
+  height: 60px;
+  min-width: 100vw;
+  background-color: #E8C4C4;
+  
+}
+
+.container-header{
+  max-width: 1200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo{
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 2rem;
+  color: #2B3A55;
+  padding: 10px 20px;
+}
+
+.link-sign-up, .link-sign-in, .button-sign-out {
+  color: #2B3A55;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+button.button-sign-out{
+  background-color: none;
+  cursor: pointer;
+}
+
+.link-sign-up{
+  text-decoration: none;
+  
+}
+
+.link-sign-in{
+  text-transform: uppercase;
+}

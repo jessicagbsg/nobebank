@@ -1,0 +1,17 @@
+
+<header class="header">
+  <div class="container-header">
+    <% if user_signed_in?%>
+      <%= link_to "nobeBank", users_path, class:"logo" %>
+      <%= button_to "sign out", destroy_user_session_path, method: :delete, class: "button-sign-out"%>
+    <% else %>
+      <%= link_to "nobeBank", new_user_session_path, class:"logo" %>
+      <div>
+        <%= link_to "cadastre-se", new_user_registration_path, class: "link-sign-up" %>
+        <%= link_to "acesse sua conta", new_user_session_path, class: "link-sign-in"%>
+      </div>
+    <% end %>
+  </div>
+  
+
+</header>
