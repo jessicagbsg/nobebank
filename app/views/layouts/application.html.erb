@@ -12,13 +12,8 @@
   </head>
 
   <body>
-    <header>
-
-      <button><%= link_to "sign in", new_user_session_path %></button>
-      <%= button_to "sign out", destroy_user_session_path, method: :delete %>
-      <button><%= link_to "sign up", new_user_registration_path %></button>
-
-    </header>
+    
+    <%= render "layouts/common/header"%>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
